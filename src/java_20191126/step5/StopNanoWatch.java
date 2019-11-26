@@ -17,7 +17,8 @@ public class StopNanoWatch extends StopWatch {
 	public void run(){
 		start();
 
-		for (long i = 0; i < 50000000000l; i++) {
+		for (long i = 0; i < 5000000000l; i++) {
+			//이 0 갯수가...틀렸었음...
 
 		}
 		
