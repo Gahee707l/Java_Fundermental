@@ -23,6 +23,12 @@ public class Member {
 		//this
 		//1.자기자신객체 = this.
 		//2.다른 생성자 호출 = this(매개변수>갯수에 따라 호출하며); << 생성자에서만 호출 가능.
+		//디폴트 생성자에서는 늘 super()를 호출한다....오류가 날 수도 있으니 제대로 확인 할것.에러가 정말 많이 남.
+		
+		//super
+		//1.부모의 객체 =super.
+		//2.부모의 생성자 호출 = super()
+		//모든 생성자에는 super()가 숨어있다.
 	}
 
 	public String getZipcode() {
