@@ -50,41 +50,46 @@ public class StringDemo {
 		// regex=regular expression(정규표현식...일종의 공식이나 패턴/표현식 정의 ex)\d = 숫자)
 		String content = "abc\nabc\nabc\nabc\nabc";
 		content = content.replaceAll("\n", "<br>");
-		//						바꾸고싶은 문구,바뀔 문구
+		// 바꾸고싶은 문구,바뀔 문구
 		System.out.println(content);
-		//					java.lang.String@hashcode
-		//						오버라이딩
-		//						.toString()이 생략됨
-		
-		s1="abc";
-		s2="abc ";
-		//length로는 잡아볼 수 있다...실수 종종 있음
+		// java.lang.String@hashcode
+		// 오버라이딩
+		// .toString()이 생략됨
+
+		s1 = "abc";
+		s2 = "abc ";
+		// length로는 잡아볼 수 있다...실수 종종 있음
 		System.out.println(s1.trim().equals(s2.trim()));
-		//앞뒤 공백 지우기 trim | 중간 공백은 아니고 공백만 지움
-		
+		// 앞뒤 공백 지우기 trim | 중간 공백은 아니고 공백만 지움
+
 		s1 = String.valueOf(100);// = 100+""
-		//value of = 프리미티브 타입을 문자열로 전환 = 1+"";(대부분이 이렇게함)
+		// value of = 프리미티브 타입을 문자열로 전환 = 1+"";(대부분이 이렇게함)
 		System.out.println(s1);
-		
+
 		String phone = "010-3024-1703";
-		//-(구분자)를 기준으로 문자열 쪼개기(토큰으로),문자열배열로 리턴
-		//delimiter로 token을 만든다
+		// -(구분자)를 기준으로 문자열 쪼개기(토큰으로),문자열배열로 리턴
+		// delimiter로 token을 만든다
 		String[] temp = phone.split("-");
 		for (String string : temp) {
 			System.out.println(string);
 		}
-		//format과 printf 비슷
-		str = String.format("%3$,10d %2$,10.2f %1$,10f",
-				10000.234,20000.123,300000);
-		//					3$=인덱스,3번쨰것이 번저 들어옴,결과는 String으로 나옴
-		//			flag > 인덱스 다음,숫자 형식 지정
-		//				width : 플래그 다음,빈공간...형식 맞추기
+		// format과 printf 비슷
+		str = String.format("%3$,10d %2$,10.2f %1$,10f", 10000.234, 20000.123, 300000);
+		// 3$=인덱스,3번쨰것이 번저 들어옴,결과는 String으로 나옴
+		// flag > 인덱스 다음,숫자 형식 지정
+		// width : 플래그 다음,빈공간...형식 맞추기
 		System.out.println(str);
-					//		%conversion
-		
-		System.out.printf("%d%n",100);
-		System.out.format("%d%n",100);
+		// %conversion
+
+		System.out.printf("%d%n", 100);
+		System.out.format("%d%n", 100);
+
+		// Error : 물지역영 에러
+		// Runtime Exception}JVM이 평소 알아서 처리함 : 1.Runtime Exception:실행중에만 잡힘
+		// ex}10/0 2.과 그 외 : 컴파일시 에러남
+		// >1.예외처리는 선택 사항,사용자에게 고지와 프로그램의 종료는 막는것이 좋다.Runtime의 서브 에러일 경우에만...
+		// 2.예외처리를 반드시 해야 한다.compile시에도 안돼니까.
+		//try catch에선 얕은것 부터 높은것 까지
 	}
-	
 
 }

@@ -1,14 +1,32 @@
 package java_20191121;
 
 public class CalendarDemo {
+	
+	/*public Date(int year,int month,int day){
+		this.year = year;
+		
+	}*/
+	
 	public static void main(String[] args) {
 		/*
 		 * 달력만들기 , ctrl + shit+/ 총 일수 더해서 %7 값으로 요일 맞추기가 목표 1년 1월 1일 = 월요일 윤년:
 		 * 366일2/29 2019/ 12/ 25 요일 은?
 		 */
 		
-		//생성자 매개변수별로 다르게...두개면 월 달력까지만 나오게,하나면 년 달력이 나오게...
-
+		//생성자 매개변수별로 다르게...두개면 월 달력이 나오게,하나면 년 달력이 나오게...
+		//						/t로 맞추기,요일 써놓고...아무튼 달력 출력
+		//				해당 년도 1월1일 요일만 알면 됨...i의 남은 나머지가 6이면.....6찍고...개행..(토요일)
+		//							빈공백만큼 밀고...(시작 요일)
+		
+		
+		/*달시작 의 미루기
+		 * 
+		 *  for(i=1;i=<monthArr[j];i++)
+		System.out.print(i+"\t");
+		if(i%6==0)
+			System.out.println();
+			*/
+		
 		int year = 1900;
 		// 2019;
 		int month = 9;
