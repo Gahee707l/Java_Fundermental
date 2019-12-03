@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 public class PrintStreamDemo {
+	//여태까진 1byte stream
 	//바이너리 이동상으론 필요함.
 	// 모니터랑 연결 | 파일이랑 연결 | ...
 	// sysout(요out도 이거stream랑 연결) | printstream:잘 안쓰지만 auto flush있음.오류는...bis아니고
