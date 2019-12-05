@@ -22,7 +22,7 @@ public class FileClient {
 		try {
 			Socket socket = new Socket(ip, port);
 			//String fileName = "mariadb.pdf";
-			String fileName = "jdk.exe";
+			String fileName = "scott.sql";
 
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 			bw.write(fileName);
