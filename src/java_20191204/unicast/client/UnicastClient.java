@@ -103,7 +103,7 @@ public class UnicastClient implements ActionListener{
 			jta.append(id +" : "+ message +"\n");
 			jtf.setText("");
 		}else if(obj == jtf){
-			//	이벤트...걸면 엔터치면 이렇게 이동한댔음
+			//	이벤트...걸면 엔터치면 커서가 창으로 이동하니까...그걸 이용.
 			jta.append(id +" : "+ message +"\n");
 			jtf.setText("");
 		}

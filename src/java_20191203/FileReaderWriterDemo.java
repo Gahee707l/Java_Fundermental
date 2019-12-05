@@ -14,6 +14,7 @@ public class FileReaderWriterDemo {
 	//1바이트에도 문자는 있는데...괜히 힘든것이니 2바이트로 한번에 하는게 나음.
 	public static void main(String[] args) {
 		FileReader fr = null;
+		
 		FileWriter fw = null;
 
 		try {
