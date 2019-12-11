@@ -27,14 +27,14 @@ public class DeptDao {
 
 	}
 
+	//single이라는 변수는 static 메소드(get instance)에서사용해야 하니 static변수로 설정해야 한다.
 	public static DeptDao single;
-	// 자기자신 변수
+	//				클래스 이름
 	private DeptDao() {
-
 	}
-
+	//외부에서 deptdao 객체를 생성하기 위해선,getinstance메소드를 이용해야 한다.
 	public static DeptDao getInstance() {
-		// 다른데서 못만드니까
+		//따라서 이 메서드에서의 deptdao 객체는 단 하나만 생성할 수 있게 코딩해야 한다.
 		if (single == null) {
 			single = new DeptDao();
 		}
