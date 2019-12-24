@@ -35,7 +35,7 @@ public class CoinMarketCapCrwalingDemo {
 
 			for (int i = 0; i < elements.size(); i++) {
 				Element trElement = elements.get(i);
-
+				
 				String date = trElement.child(0).text(); // text() //child
 				// 0번째 1,2,3...으로 가져올 수 있음.
 				String open = trElement.child(1).text();
@@ -66,5 +66,44 @@ public class CoinMarketCapCrwalingDemo {
 		//net 통신은 이제 안하고 web만 하긴 하지만...
 		//java가 tcp/ip용으로 사실 나온거라고....
 	}
+	/*
+	switch (month) {
+	case "Dec":
+		month = "12";
+		break;
+	case "Nov":
+		month = "11";
+		break;
+	case "Oct":
+		month = "10";
+		break;
+	case "Sep":
+		month = "09";
+		break;
+	case "Aug":
+		month = "08";
+		break;
+	case "Jul":
+		month = "07";
+		break;
+	case "Jun":
+		month = "06";
+		break;
+	case "May":
+		month = "05";
+		break;
+	case "Apr":
+		month = "04";
+		break;
+	case "Mar":
+		month = "03";
+		break;
+	case "Feb":
+		month = "02";
+		break;
+	case "Jan":
+		month = "01";
+		break;
+	}*/
 
 }
